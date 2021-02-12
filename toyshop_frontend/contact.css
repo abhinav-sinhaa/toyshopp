@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+body {
+  background-color: #f5f5f5;
+  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
+}
+
+nav {
+  padding: 0px;
+  margin: 0px;
+}
+
+.container-fluid {
+  padding: 0px;
+  margin: 0px;
+}
+
+.navbar-brand {
+  font-family: "Pacifico", cursive;
+}
+
+.brand {
+  color: skyblue;
+  text-shadow: 1px 1px yellow;
+  font-size: 30px;
+}
+
+.nav-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+.footer {
+  background-color: #4fd5d9;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+}
+
+.news_letter {
+  opacity: 0.7;
+}
+
+#email {
+  border-radius: 5px;
+  border: 0.5px solid #c8312c;
+  padding: 5px;
+  width: 100%;
+}
+
+#subscribe {
+  border-radius: 3px;
+  border: none;
+  padding: 5px;
+  background-color: #c8312c;
+  color: white;
+}
+
+.fa {
+  background-color: #1e6ae1;
+  color: #c8312c;
+  width: 40px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.fa:hover {
+  text-decoration: none;
+  color: #c8312c;
+}
+
+.footerbrand {
+  font-family: "Pacifico", cursive;
+  color: #c8312c;
+  text-shadow: 1px 1px yellow;
+}
+
+.footer_aboutToyshop {
+  opacity: 0.9;
+  font-size: 13px;
+}
+
+.address {
+  opacity: 0.8;
+  font-size: 12px;
+}
+
+.policy {
+  text-align: center;
+}
+
+.policy a {
+  color: black;
+}
+
+.policy a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.signature {
+  font-size: 13px;
+}
+
+.name {
+  font-size: 14px;
+  color: #e1341e;
+}
+
+hr {
+  width: 100px;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.reach,
+.call {
+  font-size: 20px;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+}
+
+.mailus {
+  font-family: "Noto Sans JP", sans-serif;
+  word-spacing: 5px;
+}
+
+label {
+  font-size: 18px;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.login,
+.signup {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}

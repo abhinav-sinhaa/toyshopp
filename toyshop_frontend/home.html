@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToyShop</title>
+    <!-- TitleBar Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/logo_icon/favicon.ico" />
+    <!-- Stylesheet -->
+    <link href="home.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="home.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo_icon/logo.svg" width="50px" height="auto" class="d-inline-block align-top"
+                    alt="">
+                &nbsp;
+                <span class="brand">ToyShop</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav px-4">
+                    <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                    <a class="nav-link text-light " href="">About Us</a>
+                    <a class="nav-link text-light" href="contact.html">Contact</a>
+                    <a class="nav-link text-light" href="login.html"><button class="login">Log In</button></a>
+                    <a class="nav-link text-light" href="signup.html"><button class="signup">Sign Up</button></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <!-- SlideShow -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="assets/caraousel/lego_0115_web.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="assets/caraousel/two_web_0202.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="assets/caraousel/nerf_2501_web.jpg" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+    </div>
+    <br>
+    <!-- Shop By Age -->
+    <h3 class="shopbyage">Shop by Age</h3>
+    <div class="container-fluid age">
+        <div class="row gy-4">
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+                <img class="ageimg" src="assets/shopbyage/0_1years.png" alt="" width="100%" height="auto" onclick="isClicked()">
+                <div class="container-fluid" id="age0">
+                    <br><br>
+                    <!-- Boys -->
+                    <div class="row gx-4 gy-4 boys">
+                        <h3>Boys</h3>
+                        <div class="col-md-3 col-sm-6 col-6 col-lg-2 toycol">
+                            <img src="assets/toys/boys/boy1.jpg" alt="" width="100%">
+                            <br><br>
+                            <h5 class="toyitemdesc">Nerf Elite Fortnite Ar-L Dart Blaster</h5>
+                            <p>Age: 0-11 months</p>
+                            <p>
+                                <span class="discountprice">4499/-</span>&nbsp;
+                                <span class="realprice">4999/-</span>
+                                <br>
+                                <span class="discount">Save 10%</span>    
+                            </p>
+                            <button class="buy_now">Buy Now</button>
+                            <button class="add_to_cart">Wishlist</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6 col-lg-2 toycol">
+                            <img src="assets/toys/boys/boy2.jpg" alt="" width="100%">
+                            <br><br>
+                            <h5 class="toyitemdesc">Dino Bubble Machine- Purple</h5>
+                            <p>Age: 0-11 months</p>
+                            <p>
+                                <span class="discountprice">1499/-</span>&nbsp;
+                                <span class="realprice">1999/-</span>
+                                <br>
+                                <span class="discount">Save 25%</span>    
+                            </p>
+                            <button class="buy_now">Buy Now</button>
+                            <button class="add_to_cart">Wishlist</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6 col-lg-2 toycol">
+                            <img src="assets/toys/boys/boy3.jpg" alt="" width="100%">
+                            <br><br>
+                            <h5 class="toyitemdesc">Mands Alien Talk & Walk Soft Toy</h5>
+                            <p>Age: 0-11 months</p>
+                            <p>
+                                <span class="discountprice">399/-</span>&nbsp;
+                                <span class="realprice">450/-</span>
+                                <br>
+                                <span class="discount">Save 20%</span>    
+                            </p>
+                            <button class="buy_now" >Buy Now</button>
+                            
+                            <button class="add_to_cart">Wishlist</button>
+                        
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6 col-lg-2 toycol">
+                            <img src="assets/toys/boys/boy4.jpg" alt="" width="100%">
+                            <br><br>
+                            <h5 class="toyitemdesc">Hamleys Boxing Punch Stand Set</h5>
+                            <p>Age: 0-11 months</p>
+                            <p>
+                                <span class="discountprice">1199/-</span>&nbsp;
+                                <span class="realprice">1499/-</span>
+                                <br>
+                                <span class="discount">Save 20%</span>    
+                            </p>
+                            <button class="buy_now">Buy Now</button>
+                            <button class="add_to_cart">Wishlist</button>
+                        </div>
+                    </div>
+                    <!-- Girls -->
+                    <div class="row gx-4 gy-4 girls">
+                        <h3>Girls</h3>
+                        <div class="col-md-3 col-sm-6 col-6 col-lg-2 toycol">
+                            <img src="assets/toys/girls/girl3.jpg" alt="" width="100%">
+                            <br><br>
+                            <h5 class="toyitemdesc">Princess Adventure 18” Backpack</h5>
+                            <p>Age: 0-11 months</p>
+                            <p>
+                                <span class="discountprice">2039/-</span>&nbsp;
+                                <span class="realprice">2399/-</span>
+                                <br>
+                                <span class="discount">Save 15%</span>    
+                            </p>
+                            <button class="buy_now" id="rzp-button1">Buy Now</button>
+                            <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+                            <script>
+                            var options = {
+                                "key": "rzp_test_5KtrjNHJB4R5hb", 
+                                "amount": "203900",
+                                "currency": "INR",
+                                "name": "ToyShop",
+                                "description": "Princess Adventure 18” Backpack",
+                                "image": "assets/logo_icon/logo.png",
+                                "order_id": "order_GaBPFGdq45Fau7", 
+                                "callback_url": "https://eneqd3r9zrjok.x.pipedream.net/",
+                                "prefill": {
+                                    "name": "John Doe",
+                                    "email": "john@example.com",
+                                    "contact": "9298755689"
+                                },
+                                "theme": {
+                                    "color": "#4EF04C"
+                                }    
+                            };
+                            var rzp1 = new Razorpay(options);
+                            document.getElementById('rzp-button1').onclick = function(e){
+                                rzp1.open();
+                                e.preventDefault();
+                            }
+                            </script>
+                            <button class="add_to_cart">Wishlist</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6 col-lg-2 toycol">
+                            <img src="assets/toys/girls/girl2.jpg" alt="" width="100%">
+                            <br><br>
+                            <h5 class="toyitemdesc">Disney Princess Hair Style Creations</h5>
+                            <p>Age: 0-11 months</p>
+                            <p>
+                                <span class="discountprice">1419/-</span>&nbsp;
+                                <span class="realprice">1499/-</span>
+                                <br>
+                                <span class="discount">Save 5%</span>    
+                            </p>
+                            <button class="buy_now">Buy Now</button>
+                            <button class="add_to_cart">Wishlist</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6 col-lg-2 toycol">
+                            <img src="assets/toys/girls/girl1.jpg" alt="" width="100%">
+                            <br><br>
+                            <h5 class="toyitemdesc">Princess Ariel's Royal Vanity</h5>
+                            <p>Age: 0-11 months</p>
+                            <p>
+                                <span class="discountprice">2369/-</span>&nbsp;
+                                <span class="realprice">2499/-</span>
+                                <br>
+                                <span class="discount">Save 5%</span>    
+                            </p>
+                            <button class="buy_now">Buy Now</button>
+                            <button class="add_to_cart">Wishlist</button>
+                        
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6 col-lg-2 toycol">
+                            <img src="assets/toys/girls/girl4.jpg" alt="" width="100%">
+                            <br><br>
+                            <h5 class="toyitemdesc">Princess Dance 'N Twirl Ballroom</h5>
+                            <p>Age: 0-11 months</p>
+                            <p>
+                                <span class="discountprice">2069/-</span>&nbsp;
+                                <span class="realprice">2299/-</span>
+                                <br>
+                                <span class="discount">Save 10%</span>    
+                            </p>
+                            <button class="buy_now">Buy Now</button>
+                            <button class="add_to_cart">Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+                <img class="ageimg" src="assets/shopbyage/1_2years.png" alt="" width="100%" height="auto">
+                <div class="age1"></div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+                <img class="ageimg" src="assets/shopbyage/3_4years.png" alt="" width="100%" height="auto">
+                <div class="age3"></div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+                <img class="ageimg" src="assets/shopbyage/5_6years.png" alt="" width="100%" height="auto">
+                <div class="age5"></div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+                <img class="ageimg" src="assets/shopbyage/7_9years.png" alt="" width="100%" height="auto">
+                <div class="age7"></div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+                <img class="ageimg" src="assets/shopbyage/10_12years.png" alt="" width="100%" height="auto">
+                <div class="age10"></div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Collection of Toys -->
+    <h3 class="collections">Collections</h3>
+    <div class="container-fluid collection_container ">
+        <div class="row gy-5">
+            <div class="col-md-3 col-sm-4 col-4 col-lg-2 toyscard">
+                <img src="assets/collection_cards/remote_1612.jpg" alt="" width="100%" class="cards">
+            </div>
+            <div class="col-md-3 col-sm-4 col-4 col-lg-2 card_column">
+                <img src="assets/collection_cards/funtolearn_0101.jpg" alt="" width="100%" class="cards">
+            </div>
+            <div class="col-md-3 col-sm-4 col-4 col-lg-2 card_column">
+                <img src="assets/collection_cards/creativemind_1612.jpg" alt="" width="100%" class="cards">
+            </div>
+            <div class="col-md-3 col-sm-4 col-4 col-lg-2 card_column">
+                <img src="assets/collection_cards/cuddle_1612.jpg" alt="" width="100%" class="cards">
+            </div>
+            <div class="col-md-3 col-sm-4 col-4 col-lg-2 card_column">
+                <img src="assets/collection_cards/stem_0101.jpg" alt="" width="100%" class="cards">
+            </div>
+            <div class="col-md-3 col-sm-4 col-4 col-lg-2 card_column">
+                <img src="assets/collection_cards/bookworm_1612.jpg" alt="" width="100%" class="cards">
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- About Us -->
+    <div class="about" id="about">
+        <div class="aboutus">
+            <h3 class="abouthead">ABOUT US</h3>
+            <p class="aboutuspara">
+                A two-teeth smile of a little one or a no-teeth smile of an old one, smile looks good on every face! We
+                just want to be responsible for at least one of your sweet smiles! Even our tagline ‘joys for all’
+                conveys the same and we aim to achieve this by offering ‘toys for all’, so that the first 100 years of
+                your childhood are celebrated to the fullest.
+            </p>
+        </div>
+        <!-- Video -->
+        <div class="container-fluid">
+            <h3 class="whoarewehead">Who Are We?</h3>
+            <br>
+            <div class="row justify-content-around gx-0 gy-0 vidrow">
+                <div class="col-md-6 col-sm-12 col-12 col-lg-6 col-xl-6 videocol">
+                    <video autoplay muted loop playsinline>
+                        <source src="assets/aboutus/ToyShop.mp4" type="video/mp4">
+                        <source src="assets/aboutus/ToyShop.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="col-md-6 col-sm-12 col-12 col-lg-6 col-xl-6 ourpromises">
+                    <p class="ourpromiseshead">Our Promises</p>
+                    <p class="videopara">
+                        <ul>
+                            <li class="promisehead">Premium quality
+                                <p class="promisedesc">All products sold on the ToyShop website are certified for the highest quality of materials and child safety. We handpick toys only from ethical and reputed brands. We don’t play around when it comes to quality.</p>
+                            </li>
+                            <li class="promisehead">Free delivery
+                                <p class="promisedesc">ToyShop is all about spreading joy. Which is why we charge nothing for delivering your packages to your doorstep. Just like Santa.</p>
+                            </li>
+                            <li class="promisehead">Easy returns
+                                <p class="promisedesc">Sometimes you pick up the wrong toy. Which is why we offer a no questions asked 1 month (from the time of purchase) return. All you have to do is show us the invoice, and ensure the toy is unopened, undamaged, and in sellable condition. It’s that simple.</p>
+                            </li>
+                        </ul>
+                        <br>
+                        <button class="learnmore">Learn more about us →</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row gx-4 gy-4">
+                <div class="col-12 col-lg-4 col-xl-4 col-sm-12 col-md-4">
+                    <h3 class="footerbrand">ToyShop</h3>
+                    <br>
+                    <p class="footer_aboutToyshop">ToyShop is India's Largest Online and Offline Store Exclusively for
+                        Toys & Games. Buy Authentic Toys, Games & Collectibles of Nerf, Marvel, Barbie.</p>
+                    <br>
+                    <h6>Reach us at:</h6>
+                    <p class="address">1/84, Chaudhary Balbir Singh Marg
+                        Punjabi Bagh, Punjabi Bagh West
+                        Delhi, 110026
+                    </p>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4 col-sm-12 col-md-4">
+                    <h4>Explore</h4>
+                    <br>
+                    <p>
+                        Home
+                        <hr>
+                        About us
+                        <hr>
+                        Contact
+                    </p>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4 col-sm-12 col-md-4">
+                    <h4>Stay Connected</h4>
+                    <br>
+                    <p class="news_letter">Join over 200,000 people by subscribing to our news-letter!</p>
+                    <form>
+                        <input type="email" id="email" name="email" required placeholder="john@gmail.com">
+                        <br><br>
+                        <input type="submit" value="Subscribe" id="subscribe">
+                    </form>
+                    <br>
+                    <p class="socialicons">
+                        <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                        &nbsp;
+                        <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                        &nbsp;
+                        <a href="https://www.youtube.com" class="fa fa-youtube"></a>
+                    </p>
+                </div>
+            </div>
+            <br>
+            <p class="policy">
+                © Copyright 2021
+                &nbsp;&nbsp;
+                <a href="#">Privacy policy</a>
+                &nbsp;&nbsp;
+                <a href="#">Terms & Conditions</a>
+                <br><br>
+                <span class="signature">Template designed & developed by
+                    <span class="name">Abhinav Sinha</span>
+                </span>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
